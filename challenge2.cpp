@@ -3,7 +3,6 @@
 //
 
 #include <iostream>
-#include <memory>
 
 class IEngine {
 public:
@@ -56,7 +55,9 @@ public:
 
 class Car : public IVehicule {
 public:
-    Car(const IEngine& engine) : IVehicule(engine) {}
+    Car(const IEngine &engine) : IVehicule(engine) {
+    }
+
     void driveVehicule() const override {
         std::cout << "Driving car ...\n";
     }
@@ -64,7 +65,9 @@ public:
 
 class Truck : public IVehicule {
 public:
-    Truck(const IEngine& engine) : IVehicule(engine) {}
+    Truck(const IEngine &engine) : IVehicule(engine) {
+    }
+
     void driveVehicule() const override {
         std::cout << "Driving truck ...\n";
     }
