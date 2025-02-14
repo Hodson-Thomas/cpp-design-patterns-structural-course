@@ -73,24 +73,3 @@ public:
         return totalSpace - usedSpace();
     }
 };
-
-// int main() {
-//     // Create an array of pointers to CloudStorage objects.
-//     const std::unique_ptr<CloudStorage> cloudServices[]
-//     {
-//         std::make_unique<CloudDrive>(),
-//         std::make_unique<FastShare>(),
-//         std::make_unique<LegacyClassAdapter>()
-//     };
-//
-//     // Iterate through the array and invoke the uploadContents and getFreeSpace
-//     // methods on each object.
-//     const string content = "Beam me up, Scotty!";
-//     for (const auto &service: cloudServices) {
-//         service->uploadContents(content);
-//         service->getFreeSpace();
-//         cout << endl;
-//     }
-//
-//     return 0;
-// }
