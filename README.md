@@ -9,5 +9,4 @@
 3. The composite pattern
 4. The façade pattern
 5. The decorator pattern
-6. The flyweight pattern
-7. The proxy pattern
+6. The proxy pattern
